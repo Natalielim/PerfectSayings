@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Quotes" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +17,84 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3. Add 'FashionTips' to the displayed widgets and click 'Done'." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zDu-Ya-uvF">
+                                <rect key="frame" x="30" y="268" width="540" height="24"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="20"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4. See a new fashion tip anytime from the Notification Center." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yf1-Qh-cC6">
+                                <rect key="frame" x="30" y="307" width="540" height="24"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="20"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1. Drag down from the top of your screen to reveal the Notification Center." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="moJ-rr-qXG">
+                                <rect key="frame" x="30" y="166" width="540" height="48"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="20"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2. Select 'Today'. Scroll down and tap 'Edit'" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wLp-9P-XKM">
+                                <rect key="frame" x="30" y="229" width="540" height="24"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="20"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to Quotes!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iqY-BO-eLF">
+                                <rect key="frame" x="162" y="100" width="276.5" height="36"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="30"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="yf1-Qh-cC6" firstAttribute="top" secondItem="zDu-Ya-uvF" secondAttribute="bottom" constant="15" id="0N6-ai-LIf"/>
+                            <constraint firstItem="wLp-9P-XKM" firstAttribute="top" secondItem="moJ-rr-qXG" secondAttribute="bottom" constant="15" id="35G-fT-3wW"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="zDu-Ya-uvF" secondAttribute="trailing" constant="10" id="4h2-Jc-4p9"/>
+                            <constraint firstItem="moJ-rr-qXG" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="5vO-JJ-IbQ"/>
+                            <constraint firstItem="iqY-BO-eLF" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="100" id="GxL-g7-d4O"/>
+                            <constraint firstItem="wLp-9P-XKM" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="5" id="JhX-Xk-q6A"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="wLp-9P-XKM" secondAttribute="trailing" constant="5" id="O1e-9Y-i0H"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="moJ-rr-qXG" secondAttribute="trailing" constant="10" id="OxB-P1-l2v"/>
+                            <constraint firstItem="yf1-Qh-cC6" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="QGD-jc-SxN"/>
+                            <constraint firstItem="zDu-Ya-uvF" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="QLm-Kt-Afw"/>
+                            <constraint firstItem="wLp-9P-XKM" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="Qei-zp-Hxk"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="moJ-rr-qXG" secondAttribute="trailing" constant="5" id="ReB-3f-NDZ"/>
+                            <constraint firstItem="moJ-rr-qXG" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="5" id="Szy-GD-RF4"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="wLp-9P-XKM" secondAttribute="trailing" constant="10" id="TaK-Fh-8Jz"/>
+                            <constraint firstItem="zDu-Ya-uvF" firstAttribute="top" secondItem="wLp-9P-XKM" secondAttribute="bottom" constant="15" id="Ufp-PX-oOS"/>
+                            <constraint firstItem="iqY-BO-eLF" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="5" id="Xk6-BB-UbV"/>
+                            <constraint firstItem="iqY-BO-eLF" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="25" id="XrL-nv-beA"/>
+                            <constraint firstItem="iqY-BO-eLF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="iX5-Ex-pdA"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="iqY-BO-eLF" secondAttribute="trailing" constant="5" id="p7i-7r-tbq"/>
+                            <constraint firstItem="wLp-9P-XKM" firstAttribute="top" secondItem="moJ-rr-qXG" secondAttribute="bottom" constant="10" id="pIh-cf-TOP"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="yf1-Qh-cC6" secondAttribute="trailing" constant="10" id="pgF-nq-uOt"/>
+                            <constraint firstItem="iqY-BO-eLF" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="25" id="rSS-7w-ETU"/>
+                            <constraint firstItem="moJ-rr-qXG" firstAttribute="top" secondItem="iqY-BO-eLF" secondAttribute="bottom" constant="10" id="wRb-pn-nyQ"/>
+                            <constraint firstItem="moJ-rr-qXG" firstAttribute="top" secondItem="iqY-BO-eLF" secondAttribute="bottom" constant="30" id="y75-zn-X3C"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Xk6-BB-UbV"/>
+                                <exclude reference="XrL-nv-beA"/>
+                                <exclude reference="p7i-7r-tbq"/>
+                                <exclude reference="rSS-7w-ETU"/>
+                                <exclude reference="ReB-3f-NDZ"/>
+                                <exclude reference="Szy-GD-RF4"/>
+                                <exclude reference="wRb-pn-nyQ"/>
+                                <exclude reference="JhX-Xk-q6A"/>
+                                <exclude reference="O1e-9Y-i0H"/>
+                                <exclude reference="pIh-cf-TOP"/>
+                            </mask>
+                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="200" y="200"/>
         </scene>
     </scenes>
 </document>
