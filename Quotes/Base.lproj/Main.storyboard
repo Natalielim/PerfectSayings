@@ -9,7 +9,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Quotes" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PerfectSayings" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -45,7 +45,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to Quotes!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iqY-BO-eLF">
                                 <rect key="frame" x="162" y="100" width="276.5" height="36"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="30"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -78,13 +78,13 @@
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
+                                <exclude reference="ReB-3f-NDZ"/>
+                                <exclude reference="Szy-GD-RF4"/>
+                                <exclude reference="wRb-pn-nyQ"/>
                                 <exclude reference="Xk6-BB-UbV"/>
                                 <exclude reference="XrL-nv-beA"/>
                                 <exclude reference="p7i-7r-tbq"/>
                                 <exclude reference="rSS-7w-ETU"/>
-                                <exclude reference="ReB-3f-NDZ"/>
-                                <exclude reference="Szy-GD-RF4"/>
-                                <exclude reference="wRb-pn-nyQ"/>
                                 <exclude reference="JhX-Xk-q6A"/>
                                 <exclude reference="O1e-9Y-i0H"/>
                                 <exclude reference="pIh-cf-TOP"/>

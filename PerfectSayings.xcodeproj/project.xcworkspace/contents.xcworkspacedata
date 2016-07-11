@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:Quotes.xcodeproj">
+      location = "self:/Users/natalielim/Documents/Coding/Make School/Quotes/PerfectSayings.xcodeproj">
    </FileRef>
 </Workspace>

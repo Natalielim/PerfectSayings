@@ -1,6 +1,6 @@
 //
 //  TodayViewController.swift
-//  Quotes!
+//  PerfectSayings!
 //
 //  Created by Natalie Lim on 7/8/16.
 //  Copyright © 2016 Natalie Lim. All rights reserved.
